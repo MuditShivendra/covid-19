@@ -1,0 +1,309 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-image: linear-gradient(to right,#01c5bb, #016560);
+    /* background-color: #292c2f; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset */
+.header{
+    border-bottom: 1px solid #9999ff;
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #292c2f;
+}
+.header img{
+  height: 80%;
+  margin: 10px;
+}
+.heads{
+    float: right;
+}
+.head{
+    display: inline-block;
+    /* float: right; */
+    color: white;
+    /* font-family: 'Merriweather', serif; */
+    /* width: 125px; */
+    font-size: 16px;
+    /* font-weight: bold; */
+    /* margin-top: 2vh; */
+    line-height: 10vh;
+    margin: 0 15px;
+}
+.head a{
+    color: white;
+    text-decoration: none;
+}
+.main-container{
+    /* border: 1px solid #9999ff; */
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#india_map{
+    height: 100%;
+    width: 65vw;
+    padding-left: 5vw;   
+    display: flex;
+}
+.svg{
+    height: 100%;
+    max-width: 760px;
+    min-width: 40vw;
+}
+svg#India_Map{
+    height: 100%;
+    width: 100%;
+}
+.current_stats{
+    height: 60vh;
+    margin-top: 15vh;
+    min-width: 20vw;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    /* border: 1px solid black; */
+    /* background-color: #292c2f; */
+    padding: 0 2vw;
+    /* overflow: hidden; */
+}
+.updatebox{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding-top: 10vh;
+    /* background-color: darkblue; */
+}
+.updatebox h1{
+   font-size: 16px;
+   font-weight: bold;
+   color: black;
+   /* margin-bottom: 10vh; */
+   margin-top: 2vh;
+}
+.beta{
+    border: 1px solid #9299a0;
+    /* margin: 10px; */
+    padding-top: 15px;
+    text-align: center;
+    /* background-color: white; */
+    height: 10vh;
+}
+.beta p{
+  margin-top: 1vh;
+  font-size: 30px;
+}
+.shad{
+    background-color: white;
+    margin: 10px;
+}
+.rightbox{
+    width: 30vw;
+    /* border-left: 1px solid #9999ff; */
+}
+.mySlides {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .mySlides:hover .image {
+    opacity: 0.3;
+  }
+  
+  .mySlides:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: rgb(145, 125, 125);
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+.heading-container {
+    text-align: center;
+    /* background-color: #222; */
+    padding: 2px 16px;
+    color: white;
+    height: 5vh;
+    font-size: 25px;
+    line-height: 5vh;
+}
+.mySlides{
+    height: 20vh;
+}
+.mySlides>img{
+    height: 100%;
+}
+.prev,.next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next-container{
+        text-align: center;
+        /* background-color: #222; */
+        padding: 2px 16px;
+        color: white;
+        height: 3vh;
+        font-size: 25px;
+        line-height: 3vh;
+        margin-bottom: 1px;
+}
+.footer{
+    border-top: 1px solid #9999ff;
+    height: 5vh;
+    width: 100%;
+}
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+ 
