@@ -44,12 +44,29 @@ table {
 	border-spacing: 0;
 }
 /* css reset */
+.loader-wrapper>svg{
+  height: 25vh;
+  position: absolute;
+  top: 35vh;
+  left: 40vw;
+
+}
+
+
+
+
+
+
+
+
+
 .header{
     border-bottom: 1px solid #9999ff;
     height: 10vh;
     width: 100%;
     margin-bottom: 10px;
     background-color: #292c2f;
+    z-index: 10;
 }
 .header img{
   height: 80%;
@@ -74,6 +91,53 @@ table {
     color: white;
     text-decoration: none;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.loader-wrapper{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #39b49a;
+  z-index: 10;
+}
+.loader-wrapper>img{
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+}
+.loader-wrapper>svg,
+.loader-wrapper>svg:focus {
+	/* -webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 10s;
+	-webkit-transform-origin:100% 100%;
+	-webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; */
+  -webkit-animation: rotation 2s infinite linear;
+}
+.ring{
+  border: 16px solid #7c7272;
+  border-radius: 50%;
+  border-top: 16px solid #292c2f;
+  border-bottom: 16px solid #292c2f;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: rotation 1.6s linear infinite;
+  animation: rotation 1.6s linear infinite;
+  position: absolute;
+  top: 40vh;
+  left: 42vw;
+  
+}
+
+
+
 .main-container{
     /* border: 1px solid #9999ff; */
     height: 90vh;
@@ -84,14 +148,26 @@ table {
 }
 #india_map{
     height: 100%;
-    width: 65vw;
-    padding-left: 5vw;   
+    width: 50vw;
+    /* padding-left: 5vw;    */
     display: flex;
+    margin-top: 5vh;
+}
+.rightdownbox{
+  width: 49vw;
+  /* display: flex; */
+  /* margin-left: -1vw; */
+  /* background-color: #222222; */
 }
 .svg{
-    height: 100%;
+    /* height: 100%; */
     max-width: 760px;
     min-width: 40vw;
+    fill: white;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    scale: 1.18;
+    margin-bottom: 5vh;
 }
 svg#India_Map{
     height: 100%;
@@ -118,7 +194,7 @@ svg#India_Map{
 .updatebox h1{
    font-size: 16px;
    font-weight: bold;
-   color: black;
+   /* color: black; */
    /* margin-bottom: 10vh; */
    margin-top: 2vh;
 }
@@ -140,11 +216,13 @@ svg#India_Map{
 }
 .rightbox{
     width: 30vw;
+    background-color: #222222;
     /* border-left: 1px solid #9999ff; */
 }
 .mySlides {
     position: relative;
-    width: 100%;
+    width: 94%;
+    padding-left: 3%;
   }
   
   .image {
@@ -177,13 +255,13 @@ svg#India_Map{
   
   .text {
     background-color: #4CAF50;
-    color: rgb(145, 125, 125);
+    color: white;
     font-size: 16px;
     padding: 16px 32px;
   }
 .heading-container {
     text-align: center;
-    /* background-color: #222; */
+    background-color: #222;
     padding: 2px 16px;
     color: white;
     height: 5vh;
@@ -191,7 +269,8 @@ svg#India_Map{
     line-height: 5vh;
 }
 .mySlides{
-    height: 20vh;
+    height: 18.6vh;
+    margin: 1vh 0;
 }
 .mySlides>img{
     height: 100%;
@@ -208,7 +287,7 @@ svg#India_Map{
 }
 .next-container{
         text-align: center;
-        /* background-color: #222; */
+        background-color: #222;
         padding: 2px 16px;
         color: white;
         height: 3vh;
@@ -220,6 +299,7 @@ svg#India_Map{
     border-top: 1px solid #9999ff;
     height: 5vh;
     width: 100%;
+    margin-top: 10vh;
 }
 .footer-distributed {
     background-color: #292c2f;
@@ -306,4 +386,27 @@ svg#India_Map{
       line-height: 1.8;
     }
   }
- 
+ /* animation part */
+
+
+ @-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(200px, 10px) rotate(0deg); }
+	10% { -webkit-transform: translate(-10px, -200px) rotate(-10deg); }
+	20% { -webkit-transform: translate(-300px, 0px) rotate(10deg); }
+	30% { -webkit-transform: translate(0px, 200px) rotate(0deg); }
+	40% { -webkit-transform: translate(10px, -10px) rotate(10deg); }
+	50% { -webkit-transform: translate(-10px, 200px) rotate(-10deg); }
+	60% { -webkit-transform: translate(-300px, -10px) rotate(0deg); }
+	70% { -webkit-transform: translate(20px, 10px) rotate(-10deg); }
+	80% { -webkit-transform: translate(-100px, -10px) rotate(10deg); }
+	90% { -webkit-transform: translate(20px, 200px) rotate(0deg); }
+	100% { -webkit-transform: translate(200px, 10px) rotate(0deg); }
+}
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}

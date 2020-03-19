@@ -1,0 +1,28 @@
+#myChart{
+    /* height: 60vh !important; */
+    /* width: 80vw !important; */
+    margin: 5vh auto;
+}
+.upper_Graph_Container{
+    display: flex;
+    flex-direction: column;
+}
+.bar_graph{
+    height: 50%;
+    width: 67vw;
+    padding-left: 3vw;   
+    display: flex;
+}
+.line_graph{
+    height: 50%;
+    width: 65vw;
+    padding-left: 3vw;   
+    display: flex;
+}
+.chart_hori{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20vh;
+}
