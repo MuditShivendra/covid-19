@@ -7,6 +7,7 @@
         <title>#FIGHTCOVID-19</title>
         <link rel="stylesheet" href="covid.css">
         <link rel="stylesheet" href="graph.css">
+        <link rel="stylesheet" href="footer.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -20,19 +21,45 @@
         </div>
         
         <div class="header" id="myHeader">
-            <img src="locAID1.png" alt="">
+            <img src="logo.png" alt="">
             <div class="heads">
                 <div class="head"><a href="">Home</a></div>
                 <div class="head"><a href="">Safety Measures</a></div>
                 <div class="head"><a href="">News</a></div>
                 <div class="head"><a href="">Helpline</a></div>
                 <div class="head"><a href="">Sources</a></div>
-                <div class="head"><a href="">Contact Us</a></div>
+                <div class="head" style="margin-right: 50px;"><a href="">Contact Us</a></div>
             </div>
         </div>
         <!-- ========================main-body==================================== -->
-        <div class="main-container">
+        <div class="main-container">            
             <div class="upper_graph_container">
+                <div class="update_info">
+                    <div class="content_left">
+                        <div class="content_up">
+                            <h1>Latest Data *</h1><br>
+                            <p>Updated <span>
+                                16:20, Mar 23,2020
+                            </span></p>
+                        </div>
+                        <div class="content_down">
+                            <div class="confirmed cd"><span style="color: yellow;">
+                                300
+                            </span><br><h1>Confirmed</h1></div>
+                            <div class="recovered cd"><span style="color: lightblue;">
+                                002
+                            </span><br><h1>Recovered</h1></div>
+                            <div class="dead cd"><span style="color: orange;">
+                                100
+                            </span><br><h1>Dead</h1></div>
+                        </div>
+                        
+                    </div>
+                    <div class="content_right">
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+                    
+                </div>
                 <div class="bar_graph" style="margin-top: 4vh;">
                     <canvas id="myChart" width="400px" height="100px" aria-label="Hello Aria world" role="img"></canvas>
                 </div>
@@ -49,99 +76,167 @@
                     <div class="container">
                         <div class="group cont1">
                             <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newspic">
+                                    <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
                                 </div>
-                                </a>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_5terre_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_lights_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
                             </div>
     
                             <div class="mySlides">
-                                <a href="#"><img src="img_5terre_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newspic">
+                                    <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
                                 </div>
-                                </a>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_lights_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
                             </div>
     
                             <div class="mySlides">
-                                <a href="#"><img src="img_lights_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newspic">
+                                    <a href="#"><img src="img_5terre_wide.jpg" class="image" style="width:100%">
+                                        </a>
                                 </div>
-                                </a>
-                            </div>
-                            <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
                                 </div>
-                                </a>
+                                
                             </div>
+    
+                            
                         </div>
                         <div class="group cont2">
                             <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newspic">
+                                    <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
                                 </div>
-                                </a>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_5terre_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_lights_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_lights_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
                             </div>
     
                             <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newspic">
+                                    <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
                                 </div>
-                                </a>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
+                            </div>
+                            <div class="mySlides">
+                                <div class="newspic">
+                                    <a href="#"><img src="img_lights_wide.jpg" class="image" style="width:100%">
+                                        
+                                    </a>
+                                </div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                </div>
+                                
                             </div>
     
                             <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newspic">
+                                    <a href="#"><img src="img_5terre_wide.jpg" class="image" style="width:100%">
+                                        </a>
                                 </div>
-                                </a>
-                            </div>
-                            <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
+                                <div class="newscontent">
+                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
                                 </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="group cont3">
-                            <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
-                                </div>
-                                </a>
+                                
                             </div>
     
-                            <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
-                                </div>
-                                </a>
-                            </div>
-    
-                            <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
-                                </div>
-                                </a>
-                            </div>
-                            <div class="mySlides">
-                                <a href="#"><img src="img_woods_wide.jpg" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">alpha beta gaama</div>
-                                </div>
-                                </a>
-                            </div>
+                            
                         </div>
                         <div class="next-container">
                             <a class="prev" onclick="plusSlides(-1)"> < </a>
@@ -346,35 +441,26 @@
             </div>
         </div>
         <!-- ========================footer======================================= -->
-        <div class="footer">
+        <div class="footer" style="height: 200px;">
             <footer class="footer-distributed">
-
-                <div class="footer-right">
-    
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
-    
-                </div>
     
                 <div class="footer-left">
-    
-                    <p class="footer-links">
-                        <a class="link-1" href="#">Home</a>
-    
-                        <a href="#">Safety</a>
-    
-                        <a href="#">News</a>
-    
-                        <a href="#">Sources</a>
-    
-                        <a href="#">Helplines</a>
-    
-                        <a href="#">Contact Us</a>
-                    </p>
-    
+                    <div class="logo_footer" style="border-right: 1px solid #385c58;"><img src="logo.png" alt=""style="height: 380px;
+                        margin: -140px -50px;">
                     <p>LocAid &copy; 2020</p>
+                    </div>
+                    <div class="page_count" style="border-right: 1px solid #385c58;">
+                        <h1>Total Views</h1><span id="viewcount">13,564,123</span>
+                    </div>
+                    <div class="contact_form">
+                       <div class="foot_left">
+                           <h1>Contact Us:</h1><br>
+                           <span> Email:   support@locaid.com </span><br>
+                           <span> Office Address: Pilani, Rajasthan
+                            </span>
+                       </div>
+                    </div>
+                    
                 </div>
     
             </footer>

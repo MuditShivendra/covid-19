@@ -1,7 +1,11 @@
+
+
+
 var ctx = document.getElementById('myChart').getContext('2d');
 
-Chart.defaults.global.defaultFontColor = 'black';
-Chart.defaults.global.defaultFontSize = 16;
+Chart.defaults.global.defaultFontColor = 'white';
+// Chart.defaults.global.gridLines.Color = 'white';
+Chart.defaults.global.defaultFontSize = 18;
 Chart.defaults.global.defaultFontFamily = "'Merriweather', serif";
 Chart.defaults.global.animation.duration = 2000;
 
@@ -44,7 +48,7 @@ var chart = new Chart(ctx, {
     options: {
         responsive:true,
         responsiveAnimationDuration: 2000,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         onHover: function() {
             // on mouse moves do this  
         },
@@ -54,13 +58,15 @@ var chart = new Chart(ctx, {
             xAxes: [{
                 stacked: true,
                 gridLines: {
-                    display: false
+                    display: false,
+                    // color: 'rgba(0, 100, 0, 0.1)'
                 }
             }],
             yAxes: [{
                 stacked: true,
                 gridLines: {
-                  display: false
+                  display: false,
+                //   color: 'white'
                 }
               }]
         }
@@ -74,10 +80,11 @@ var myLineChart = new Chart(ltx, {
     data: {
         labels: ['02 Mar 2020', '03 March 2020', '04 Mar 2020', '05 Mar 2020', '06 Mar 2020', '07 Mar 2020','08 Mar 2020','09 Mar 2020'],
         datasets: [{
-            label: 'Total',
-            backgroundColor: 'rgba(255, 183, 0,0.4)   ',
+            label: 'Total Cases',
+            backgroundColor: 'rgba(255, 183, 0,0)   ',
             borderColor: 'white',
-            borderWidth: 1,
+            borderWidth: 2,
+            pointRadius:7,
             pointBackgroundColor:' #9fe0ca',
             pointHitRadius:40,
             // steppedLine:'middle',
@@ -88,7 +95,32 @@ var myLineChart = new Chart(ltx, {
         }]
 
     },
-    options: {}
+    options: {
+        legend:{
+            display: false
+        },
+        title: {
+        display: true,
+        text: 'Corona Virus Spread trend'
+      },
+        maintainAspectRatio: false,
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    display: true,
+                    lineWidth: 0.5,
+                    // zeroLineWidth: 5,
+                    color: 'white'
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                  display: false,
+                  lineWidth: 0.5,
+                  color: 'white'
+                }
+              }]
+        }}
 });
 
 
@@ -112,14 +144,26 @@ var myLineChart = new Chart(htx, {
         }]
 
     },
-    options: { 
+    options: {title: {
+        display: true,
+        text: 'State Wise cases reported'
+      },
+        maintainAspectRatio: false, 
         scales: {
         xAxes: [{
             stacked: true,
             gridLines: {
                 display: false
             }
-        }]}
+        }],
+        yAxes: [{
+            gridLines: {
+              display: false,
+              lineWidth: 0.5,
+              color: 'white'
+            }
+          }]
+        }
     }
 });
 
@@ -135,3 +179,22 @@ $("#india_map").find("path").hover(function(){
 // }, function(){
 //     $(this).css("fill","white");
 // });
+// var ptx = document.getElementById('myPieChart').getContext('2d');
+
+new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Confirmed", "Recovered", "Dead"],
+      datasets: [{
+        label: "Population (millions)",
+        backgroundColor: ["#ffb700", "lightblue","orange"],
+        data: [300,100,020]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Current Situation in India'
+      }
+    }
+});

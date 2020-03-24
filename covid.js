@@ -39,7 +39,7 @@ function Sticky() {
 // ==============rightbox carousel======================
 var slideIndex = 1;
 showSlides(slideIndex);
-state_update()
+// state_update()
 
 function plusSlides(n) {
   showSlides(slideIndex += n);

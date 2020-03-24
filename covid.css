@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-image: linear-gradient(to right,#01c5bb, #016560);
+    background-image: linear-gradient(180deg, rgba(0,1,1,1) 0%, rgba(0,73,66,1) 36.14%, rgba(0,73,66,1) 79.66%, rgba(0,0,0,1) 100%);;
+    /* background-image: linear-gradient(#000201,#004942, #004942,#004942,#000000); */
     /* background-color: #292c2f; */
 }
 ol, ul {
@@ -61,16 +62,15 @@ table {
 
 
 .header{
-    border-bottom: 1px solid #9999ff;
-    height: 10vh;
+    border-bottom: 1px solid #385c58;
+    height: 130px;
     width: 100%;
-    margin-bottom: 10px;
-    background-color: #292c2f;
+    /* margin-bottom: 10px; */
     z-index: 10;
 }
 .header img{
-  height: 80%;
-  margin: 10px;
+  height: 320px;
+  margin: -90px -50px;
 }
 .heads{
     float: right;
@@ -81,10 +81,10 @@ table {
     color: white;
     /* font-family: 'Merriweather', serif; */
     /* width: 125px; */
-    font-size: 16px;
+    font-size: 28px;
     /* font-weight: bold; */
     /* margin-top: 2vh; */
-    line-height: 10vh;
+    line-height: 125px;
     margin: 0 15px;
 }
 .head a{
@@ -92,6 +92,8 @@ table {
     text-decoration: none;
 }
 .sticky {
+  background-image: linear-gradient( rgba(41, 44, 47,1), rgba(41, 44, 47,0.4));
+  /* background-image: #292c2f; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -138,13 +140,54 @@ table {
 
 
 
+
 .main-container{
     /* border: 1px solid #9999ff; */
-    height: 90vh;
+    /* height: 90vh; */
     width: 100%;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
+}
+.update_info{
+  height: 240px;
+  margin-top: 2vh;
+  padding-left: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+.update_info .content_left{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.content_down{
+  display: flex;
+  flex-direction: row;
+}
+.content_down h1{
+  font-size: 28px !important;
+}
+.content_down span{
+  font-size: 40px;
+  color: white;
+}
+.cd{
+  text-align: center;
+  margin: 3vw;
+}
+.content_right{
+  width: 40%;
+  height: 100%;
+}
+.update_info h1{
+  color: white;
+  font-size: 24px;
+}
+.update_info p{
+  color: white;
+  /* font-size: 24px; */
 }
 #india_map{
     height: 100%;
@@ -215,11 +258,15 @@ svg#India_Map{
     margin: 10px;
 }
 .rightbox{
-    width: 30vw;
-    background-color: #222222;
+  width: 30vw;
+  border: 1px solid #385c58;
+    
+    /* background-color: #222222; */
     /* border-left: 1px solid #9999ff; */
 }
 .mySlides {
+  display: flex;
+  flex-direction: row;
     position: relative;
     width: 94%;
     padding-left: 3%;
@@ -228,10 +275,11 @@ svg#India_Map{
   .image {
     opacity: 1;
     display: block;
-    width: 100%;
+    width: 50%;
     height: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 25px;
   }
   
   .middle {
@@ -261,7 +309,7 @@ svg#India_Map{
   }
 .heading-container {
     text-align: center;
-    background-color: #222;
+    /* background-color: #222; */
     padding: 2px 16px;
     color: white;
     height: 5vh;
@@ -271,6 +319,10 @@ svg#India_Map{
 .mySlides{
     height: 18.6vh;
     margin: 1vh 0;
+}
+.newscontent{
+  color: white;
+  padding: 10px;
 }
 .mySlides>img{
     height: 100%;
@@ -287,7 +339,7 @@ svg#India_Map{
 }
 .next-container{
         text-align: center;
-        background-color: #222;
+        /* background-color: #222; */
         padding: 2px 16px;
         color: white;
         height: 3vh;
@@ -296,13 +348,34 @@ svg#India_Map{
         margin-bottom: 1px;
 }
 .footer{
-    border-top: 1px solid #9999ff;
-    height: 5vh;
+  border-top: 1px solid #385c58;
+    /* height: 5vh; */
     width: 100%;
-    margin-top: 10vh;
+    overflow: hidden;
+    color: white;
+    /* margin-top: 10vh; */
+}
+.footer-left{
+  display: flex;
+  flex-direction: row;
+}
+.logo_footer{
+  width: 35%;
+}
+.page_count{
+width: 30%;
+font-size: 28px;
+text-align: center;
+padding-top: 20px;
+}
+.page_count>span{
+  font-size: 40px;
+}
+.contact_form{
+width: 35%;
 }
 .footer-distributed {
-    background-color: #292c2f;
+    /* background-color: #292c2f; */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -358,7 +431,7 @@ svg#India_Map{
     display: inline-block;
     width: 35px;
     height: 35px;
-    background-color: #33383b;
+    /* background-color: #33383b; */
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
