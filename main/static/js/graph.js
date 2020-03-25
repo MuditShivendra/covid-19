@@ -5,7 +5,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 
 Chart.defaults.global.defaultFontColor = 'white';
 // Chart.defaults.global.gridLines.Color = 'white';
-Chart.defaults.global.defaultFontSize = 18;
+Chart.defaults.global.defaultFontSize = 17;
 Chart.defaults.global.defaultFontFamily = "'Merriweather', serif";
 Chart.defaults.global.animation.duration = 2000;
 

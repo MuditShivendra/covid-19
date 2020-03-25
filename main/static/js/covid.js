@@ -1,5 +1,8 @@
 // sticky header================================
 window.onscroll = function() {Sticky()};
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;

@@ -66,6 +66,7 @@ table {
     height: 130px;
     width: 100%;
     /* margin-bottom: 10px; */
+    font-family: 'Tw Cen MT';
     z-index: 10;
 }
 .header img{
@@ -79,13 +80,14 @@ table {
     display: inline-block;
     /* float: right; */
     color: white;
+    /* font: Regular 39px/42px Tw Cen MT; */
     /* font-family: 'Merriweather', serif; */
     /* width: 125px; */
-    font-size: 28px;
+    font-size: 25px;
     /* font-weight: bold; */
     /* margin-top: 2vh; */
     line-height: 125px;
-    margin: 0 15px;
+    margin: 0 30px;
 }
 .head a{
     color: white;
@@ -323,6 +325,8 @@ svg#India_Map{
 .newscontent{
   color: white;
   padding: 10px;
+  width: 100%;
+  line-height: 2.5vh;
 }
 .mySlides>img{
     height: 100%;

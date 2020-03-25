@@ -1,0 +1,74 @@
+.main_container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.leftdownbox{
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 22px;
+}
+.leftdownbox h1{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    font-size: 26px;
+}
+.leftdownbox h2{
+    margin-left: 10vw;
+    margin-top: 7vh;
+}
+.leftdownbox h3{
+    margin-left: 12vw;
+    margin-top: 2vh;
+    font-size: 26px;
+}
+.india_map{
+    width: 50%;
+    height: 100%;
+}
+.svg{
+    scale: 1;
+    margin-top: 7vh;
+    fill: #0D130F;
+    stroke: #385c58;
+}
+.infobox{
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 132px;
+    right: 57px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.state_name{
+    /* height: 4vh; */
+    padding: 26px;
+}
+.information{
+    height: 26vh;
+    display: flex;
+    flex-direction: row;
+}
+.helpline_numbers,.isolation_zones{
+    width: 100%;
+    padding: 0px 24px;
+
+}
+.state_name span{
+display: none;
+}
+.helpline_numbers span{
+    display: none;
+}
+.helpline_numbers li,.isolation_zones li{
+
+    margin-left: 10px;
+
+}
