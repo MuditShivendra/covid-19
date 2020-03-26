@@ -71,5 +71,5 @@ function showSlides(n) {
 //   console.log($('#IN-MP').html());
 // }
 
-$("span#viewcount").find("a").attr("href","#");
-$("span#viewcount").find("img").css("height","40px");
+// $("span#viewcount").find("a").attr("href","#");
+// $("span#viewcount").find("img").css("height","40px");
