@@ -3,7 +3,7 @@ getCorrectQuestions();
 function getCorrectQuestions(){
     var data = $.ajax( {
         type: 'GET',     
-        url: 'http://vp7.pythonanywhere.com/scrape/scrape_result/?format=json',
+        url: 'https://vp7.pythonanywhere.com/news-scrape/news_result/?format=json',
         data: {},
         success: function(data) {
             var obj = JSON.parse;
