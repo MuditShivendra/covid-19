@@ -70,3 +70,6 @@ function showSlides(n) {
 //   $( "#IN-MP" ).text( "12" );
 //   console.log($('#IN-MP').html());
 // }
+
+$("span#viewcount").find("a").attr("href","#");
+$("span#viewcount").find("img").css("height","40px");
