@@ -210,7 +210,7 @@ table {
     min-width: 40vw;
     fill: white;
     margin-top: 10vh;
-    margin-left: 10vw;
+    margin-left: -15vw;
     scale: 1.18;
     margin-bottom: 5vh;
 }

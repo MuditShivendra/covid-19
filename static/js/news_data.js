@@ -1,6 +1,6 @@
 // window.setInterval(getCorrectQuestions, 3000)
-getCorrectQuestions();
-function getCorrectQuestions(){
+getNews();
+function getNews(){
     var data = $.ajax( {
         type: 'GET',     
         url: 'https://vp7.pythonanywhere.com/news-scrape/news_result/?format=json',

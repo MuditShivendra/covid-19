@@ -29,15 +29,21 @@ function Sticky() {
 // remember to remove the timeout option
 
               $(window).on("load",function(){
-              // //   setTimeout(function(){   , 3000);
-              // // });
-              $(".loader-wrapper").fadeOut("slow");
+                setTimeout(function(){$(".loader-wrapper").fadeOut("slow");
 
                 var html = jQuery('html');
               var scrollPosition = html.data('scroll-position');
               html.css('overflow', html.data('previous-overflow'));
-              window.scrollTo(scrollPosition[0], scrollPosition[1])
+              window.scrollTo(scrollPosition[0], scrollPosition[1])}
+                 , 2000);
               });
+              // $(".loader-wrapper").fadeOut("slow");
+
+              //   var html = jQuery('html');
+              // var scrollPosition = html.data('scroll-position');
+              // html.css('overflow', html.data('previous-overflow'));
+              // window.scrollTo(scrollPosition[0], scrollPosition[1])
+              // // });
 
 // ==============rightbox carousel======================
 var slideIndex = 1;
@@ -73,3 +79,63 @@ function showSlides(n) {
 
 // $("span#viewcount").find("a").attr("href","#");
 // $("span#viewcount").find("img").css("height","40px");
+
+
+// ==========================
+getStats();
+function getStats(){
+    var data = $.ajax( {
+        type: 'GET',     
+        url: 'https://vp7.pythonanywhere.com/state-scrape/state_result/?format=json',
+        data: {},
+        success: function(data) {
+            var obj = JSON.parse;
+            var x = data;
+            console.log(x);
+            
+            var alpha = 0;
+
+            // =============
+            $("#india_map").find("path").hover(function(){
+              var key = $(this).attr("id");
+              // console.log(key)
+              var data = $("[boo="+key+"]").text();
+            // console.log(x[1].state_name);
+              $(this).css("fill","#9fe0ca");
+              var beta = 0;
+            $("p#statename").text(data);
+              var number = $("[key="+key+"]").text();
+              for(var i = 0; i < x.length - 1; i++){
+                
+                if(x[i].state_name == data){
+                  alpha = i;
+                  beta ++;
+                }
+              }
+            if(beta){
+            
+              $("#tot").text(x[alpha].india_confirmed_cases);
+              $("#cur").text(x[alpha].cured_cases);
+              $("#for").text(x[alpha].foreign_confirmed_cases);
+              $("#dea").text(x[alpha].deaths_caused);
+            }
+            else{
+
+              $("#tot").text(0);
+              $("#cur").text(0);
+              $("#for").text(0);
+              $("#dea").text(0);
+            }
+            }, 
+            function(){
+              $(this).css("fill","white");
+              
+            });
+
+
+        }
+
+
+    });
+    return data;
+}

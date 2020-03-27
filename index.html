@@ -8,10 +8,12 @@
         <link rel="stylesheet" href="static/css/covid.css">
         <link rel="stylesheet" href="static/css/graph.css">
         <link rel="stylesheet" href="static/css/footer.css">
+        <link rel="stylesheet" href="static/css/map.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet"> 
         
         <link href="static/fonts/TCM_____.TTF" rel="stylesheet">  
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -29,11 +31,11 @@
             <img src="static/media/logo.png" alt="">
             <div class="heads">
                 <div class="head"><a href="index.html">Home</a></div>
-                <div class="head"><a href="">Safety Measures</a></div>
-                <div class="head"><a href="">News</a></div>
+                <!-- <div class="head"><a href="">Safety Measures</a></div>
+                <div class="head"><a href="">News</a></div> -->
                 <div class="head"><a href="templates/helpline.html">Helpline</a></div>
-                <div class="head"><a href="">Sources</a></div>
-                <div class="head" style="margin-right: 50px;"><a href="">Contact Us</a></div>
+                <!-- <div class="head"><a href="">Sources</a></div> -->
+                <div class="head" style="margin-right: 50px;"><a href="templates/facts.html">Awareness</a></div>
             </div>
         </div>
         <!-- ========================main-body==================================== -->
@@ -48,13 +50,13 @@
                             </span></p>
                         </div>
                         <div class="content_down">
-                            <div class="confirmed cd"><span style="color: yellow;">
+                            <div class="confirmed cd"><span id ="confirmed"style="color: yellow;">
                                 300
                             </span><br><h1>Confirmed</h1></div>
-                            <div class="recovered cd"><span style="color: lightblue;">
+                            <div class="recovered cd"><span id = "recovered"style="color: lightblue;">
                                 002
                             </span><br><h1>Recovered</h1></div>
-                            <div class="dead cd"><span style="color: orange;">
+                            <div class="dead cd"><span id="dead"style="color: orange;">
                                 100
                             </span><br><h1>Dead</h1></div>
                         </div>
@@ -253,7 +255,27 @@
         </div>
         <!-- confiremed casses bar graph -->
         <div class="main-container">
+            
             <div id="india_map">
+                <div class="details">
+                    <div class="state_details">
+                        <h1>State: </h1><p id="statename"></p><span boo="IN-AP">Andhra Pradesh</span><span boo="IN-AN">Andaman and Nicobar Islands</span><span boo="IN-AR">Arunachal Pradesh</span><span boo="IN-AS">Assam</span><span boo="IN-BR">Bihar</span><span boo="IN-CT">Chhattisgarh</span><span boo="IN-CH">Chandigarh</span><span boo="IN-DD">Daman and Diu</span><span boo="IN-DL">Delhi</span><span boo=""IN-DN>Dadra</span><span boo="IN-GA">Goa</span><span boo="IN-GJ">Gujarat</span><span boo="IN-HP">Himachal Pradesh</span><span boo="IN-HR">Haryana</span><span boo="IN-JH">Jharkhand</span><span boo="IN-JK">Jammu and Kashmir</span><span boo="IN-KA">Karnataka</span><span boo="IN-KL">Kerala</span><span boo="IN-LD">Lakshadweep</span><span boo="IN-MH">Maharashtra</span><span boo="IN-ML">Meghalaya</span><span boo="IN-MN">Manipur</span><span boo="IN-MP">Madhya Pradesh</span><span boo="IN-NL">Nagaland</span><span boo="IN-MZ">Mizoram</span><span boo="IN-OR">Odisha</span><span boo="IN-PB">Punjab</span><span boo="IN-PY">Puducherry</span><span boo="IN-RJ">Rajasthan</span><span boo="IN-SK">Sikkim</span><span boo="IN-TG">Telangana</span><span boo="IN-TN">Tamil Nadu</span><span boo="IN-TR">Tripura</span><span boo="IN-UP">Uttar Pradesh</span><span boo="IN-UT">Uttarakhand</span><span boo="IN-WB">West Bengal</span>
+                    </div>
+                    <div class="information_details">
+                        <div class="total ff">
+                            <h1>Total:</h1><h1 id="tot" style="font-size: 40px; color: yellowgreen;text-align: center;">1</h1>
+                        </div>
+                        <div class="recovered ff">
+                            <h1>Cured:</h1><h1 id="cur" style="font-size: 40px; color: lightblue;text-align: center;">2</h1>
+                        </div>
+                        <div class="foreign ff">
+                            <h1>Foreign:</h1><h1 id="for" style="font-size: 40px; color: lightgreen;text-align: center;"">3</h1>
+                        </div>
+                        <div class="deaths ff">
+                            <h1>Deaths:</h1><h1 id="dea" style="font-size: 40px; color:lightslategrey;text-align: center;"">4</h1>
+                        </div>
+                    </div>
+                </div>
                 <div class="svg"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
                     <svg
                     xmlns:mapsvg="http://mapsvg.com"

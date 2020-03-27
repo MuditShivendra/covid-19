@@ -1,0 +1,50 @@
+
+.svg{
+    scale: 1;
+    margin-top: 7vh;
+    fill: white;
+    stroke: #385c58;
+}
+.svg path:hover{
+    scale: 1.01;
+}
+
+.details{
+    /* padding-top: 10px; */
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 3vh;
+    left: 27vw;
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.information_details{
+    display: flex;
+    flex-direction: row;
+}
+.ff{
+    width: 25%;
+    padding: 0 10px;
+}
+.details h1{
+
+}
+#statename{
+    font-size: 24px;
+}
+.state_details {
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 30%;
+}
+.information_details{
+    padding-top: 10px;
+    height: 70%;
+}
+.state_details span,.information_details span{
+
+    display: none;
+}

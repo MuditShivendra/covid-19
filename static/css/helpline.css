@@ -12,17 +12,20 @@
 }
 .leftdownbox h1{
     margin-top: 10vh;
+    text-decoration: underline;
     margin-left: 5vw;
-    font-size: 26px;
+    font-size: 40px;
 }
 .leftdownbox h2{
     margin-left: 10vw;
     margin-top: 7vh;
+    font-size: 25px;
 }
 .leftdownbox h3{
     margin-left: 12vw;
     margin-top: 2vh;
-    font-size: 26px;
+    font-family: 'Iceland', cursive;
+    font-size: 50px;
 }
 .india_map{
     width: 50%;
@@ -33,6 +36,7 @@
     margin-top: 7vh;
     fill: #0D130F;
     stroke: #385c58;
+    margin-left: -2vw;
 }
 .infobox{
     border: 2px solid black;
