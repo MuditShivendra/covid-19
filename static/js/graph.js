@@ -55,7 +55,8 @@ function getStateInfo(){
                   title: {
                     display: true,
                     text: 'Current Situation in India'
-                  }
+                  },
+                  maintainAspectRatio: false,
                 }
             });
             // ====================================================================================
@@ -311,7 +312,7 @@ var myLineChart = new Chart(ltx, {
 $("#india_map").find("path").hover(function(){
     $(this).css("fill","#9fe0ca");
 }, function(){
-    $(this).css("fill","white");
+    $(this).css("fill","#0D130F");
     
 });
 

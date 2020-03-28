@@ -24,6 +24,7 @@ function Sticky() {
             html.data('previous-overflow', html.css('overflow'));
             html.css('overflow', 'hidden');
             window.scrollTo(scrollPosition[0], scrollPosition[1]);
+            $("#myHeader").css("display","none");
 
 //we'll disable the loader and then disable the scroll lock---------------------------------------------------------remem
 // remember to remove the timeout option
@@ -34,8 +35,11 @@ function Sticky() {
                 var html = jQuery('html');
               var scrollPosition = html.data('scroll-position');
               html.css('overflow', html.data('previous-overflow'));
-              window.scrollTo(scrollPosition[0], scrollPosition[1])}
+              window.scrollTo(scrollPosition[0], scrollPosition[1])
+              $("#myHeader").css("display","block");}
                  , 2000);
+
+
               });
               // $(".loader-wrapper").fadeOut("slow");
 
@@ -47,7 +51,10 @@ function Sticky() {
 
 // ==============rightbox carousel======================
 var slideIndex = 1;
+console.log($(location).attr('href'));
+if($(location).attr('href')=='file:///home/mudit/projects/covid-19/index.html'){
 showSlides(slideIndex);
+            }
 // state_update()
 
 function plusSlides(n) {
@@ -95,13 +102,15 @@ function getStats(){
             
             var alpha = 0;
 
-            // =============
+            // =============hover============
             $("#india_map").find("path").hover(function(){
               var key = $(this).attr("id");
               // console.log(key)
               var data = $("[boo="+key+"]").text();
             // console.log(x[1].state_name);
               $(this).css("fill","#9fe0ca");
+
+              // $(".details").css("display","block");
               var beta = 0;
             $("p#statename").text(data);
               var number = $("[key="+key+"]").text();
@@ -128,14 +137,59 @@ function getStats(){
             }
             }, 
             function(){
-              $(this).css("fill","white");
+              $(this).css("fill","#0D130F");
+
+              // $(".details").css("display","none");
               
             });
+            console.log($(window).width())
+            // ===============clicks
+            if($(window).width() <= 600 ){
+            $("#india_map").find("path").click(function() {
+              //
+              var key = $(this).attr("id");
+              // console.log(key)
+              var data = $("[boo="+key+"]").text();
+            // console.log(x[1].state_name);
+              $(this).css("fill","#9fe0ca");
+
+              $(".details").css("display","block");
+              var beta = 0;
+            $("p#statename").text(data);
+              var number = $("[key="+key+"]").text();
+              for(var i = 0; i < x.length - 1; i++){
+                
+                if(x[i].state_name == data){
+                  alpha = i;
+                  beta ++;
+                }
+              }
+            if(beta){
+            
+              $("#tot").text(x[alpha].india_confirmed_cases);
+              $("#cur").text(x[alpha].cured_cases);
+              $("#for").text(x[alpha].foreign_confirmed_cases);
+              $("#dea").text(x[alpha].deaths_caused);
+            }
+            else{
+
+              $("#tot").text(0);
+              $("#cur").text(0);
+              $("#for").text(0);
+              $("#dea").text(0);
+            } 
+              // 
+
+              setTimeout(function(){
+
+              $("#"+key).css("fill","#0d130f");
+              $(".details").css("display","none");
+              },1000);
+            });
+          }
 
 
-        }
-
-
-    });
+        } 
+   });
     return data;
 }

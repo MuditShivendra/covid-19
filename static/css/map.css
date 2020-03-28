@@ -2,7 +2,7 @@
 .svg{
     scale: 1;
     margin-top: 7vh;
-    fill: white;
+    fill: #0D130F;
     stroke: #385c58;
 }
 .svg path:hover{
@@ -17,7 +17,7 @@
     top: 3vh;
     left: 27vw;
     height: 200px;
-    width: 400px;
+    width: 370px;
     border: 2px solid black;
     border-radius: 20px;
 }
@@ -47,4 +47,16 @@
 .state_details span,.information_details span{
 
     display: none;
+}
+
+/* =================== */
+@media only screen and (max-width: 600px) {
+.svg{
+    scale: 0.5 0.6;
+    margin-top: -20vh;
+    margin-left: -30vw;
+}
+#india_map{
+    height: 60vh;
+}
 }
