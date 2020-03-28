@@ -61,7 +61,9 @@ table {
 
 
 
-
+#myHeader{
+  display: none;
+}
 .header{
     border-bottom: 1px solid #385c58;
     height: 130px;

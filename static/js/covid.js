@@ -24,7 +24,7 @@ function Sticky() {
             html.data('previous-overflow', html.css('overflow'));
             html.css('overflow', 'hidden');
             window.scrollTo(scrollPosition[0], scrollPosition[1]);
-            $("#myHeader").css("display","none");
+            // $("#myHeader").css("display","none");
 
 //we'll disable the loader and then disable the scroll lock---------------------------------------------------------remem
 // remember to remove the timeout option
@@ -37,7 +37,7 @@ function Sticky() {
               html.css('overflow', html.data('previous-overflow'));
               window.scrollTo(scrollPosition[0], scrollPosition[1])
               $("#myHeader").css("display","block");}
-                 , 2000);
+                 , 4000);
 
 
               });
