@@ -28,7 +28,7 @@ body {
     background-image: linear-gradient(180deg, rgba(0,1,1,1) 0%, rgba(0,73,66,1) 36.14%, rgba(0,73,66,1) 79.66%, rgba(0,0,0,1) 100%);;
     /* background-image: linear-gradient(#000201,#004942, #004942,#004942,#000000); */
       /* background-color: #292c2f; */
-    overflow-x: hidden  ;
+    /* overflow-x: hidden  ; */
   }
 ol, ul {
 	list-style: none;
