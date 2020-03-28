@@ -145,6 +145,7 @@ function getStats(){
             console.log($(window).width())
             // ===============clicks
             if($(window).width() <= 600 ){
+              // $(".svg").css("scale","0.5 0.6 !important")
             $("#india_map").find("path").click(function() {
               //
               var key = $(this).attr("id");
