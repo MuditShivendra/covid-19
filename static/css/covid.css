@@ -221,7 +221,7 @@ i{
     fill: white;
     margin-top: 10vh;
     margin-left: -15vw;
-    scale: 1.18;
+    transform: scale(1.18,1.18);
     margin-bottom: 5vh;
 }
 svg#India_Map{
