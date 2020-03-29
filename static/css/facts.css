@@ -135,7 +135,7 @@ body {
 }
 .mySlideshow img,.mySlideshow1 img,.mySlideshow2 img,.mySlideshow3 img,.mySlideshow4 img{
   width: 30vw !important;
-  height: 40vh;
+  /* height: 40vh; */
 }
 .main-container{
   display: flex;

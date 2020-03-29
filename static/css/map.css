@@ -10,7 +10,9 @@
 }
 
 .details{
+    font-family: 'Baloo Thambi 2', cursive;
     /* padding-top: 10px; */
+    z-index: 1;
     font-size: 20px;
     color: white;
     position: relative;

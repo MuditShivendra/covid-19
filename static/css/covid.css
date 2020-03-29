@@ -28,7 +28,7 @@ body {
     background-image: linear-gradient(180deg, rgba(0,1,1,1) 0%, rgba(0,73,66,1) 36.14%, rgba(0,73,66,1) 79.66%, rgba(0,0,0,1) 100%);;
     /* background-image: linear-gradient(#000201,#004942, #004942,#004942,#000000); */
       /* background-color: #292c2f; */
-    /* overflow-x: hidden  ; */
+    overflow-x: hidden  ;
   }
 ol, ul {
 	list-style: none;
@@ -66,16 +66,16 @@ table {
 }
 .header{
     border-bottom: 1px solid #385c58;
-    height: 130px;
+    height: 12vh;
     width: 100vw;
     position: fixed;
     top: 0;
     /* margin-bottom: 10px; */
-    font-family: 'Tw Cen MT';
+    font-family: 'Baloo Thambi 2', cursive;
     z-index: 10;
 }
 .header img{
-  height: 320px;
+  height: 30vh;
   margin: -90px -50px;
 }
 i{
@@ -94,7 +94,7 @@ i{
     font-size: 25px;
     /* font-weight: bold; */
     /* margin-top: 2vh; */
-    line-height: 125px;
+    line-height: 12vh;
     margin: 0 30px;
 }
 .head a{
@@ -157,13 +157,13 @@ i{
     /* height: 90vh; */
     width: 100vw;
     margin-bottom: 10px;
-    margin-top: 130px;
+    margin-top: 12vh;
     /* margin-top: 130px; */
     display: flex;
     flex-direction: row;
 }
 .update_info{
-  height: 240px;
+  height: 25vh;
   margin-top: 2vh;
   padding-left: 3vw;
   display: flex;
@@ -197,7 +197,7 @@ i{
 .update_info h1{
   color: white;
   font-size: 50px;
-  font-family: 'Iceland',cursive;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 .update_info p{
   color: white;
@@ -242,7 +242,7 @@ svg#India_Map{
     /* overflow: hidden; */
 }
 .upper_graph_container{
-  width: 70v%;
+  width: 70%;
 }
 .updatebox{
     height: 100%;
@@ -346,8 +346,8 @@ svg#India_Map{
   padding: 10px;
   width: 50%;
   line-height: 2.5vh;
-  font-family: 'iceland',cursive;
-  font-size: 25px;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 16px;
 }
 .mySlides>img{
     height: 100%;
@@ -484,8 +484,11 @@ width: 35%;
       line-height: 1.8;
     }
   }
+@media only screen and (max-height:760px){
+.header img{
+  height: 250px;
 
-
+}
 
 /*----------------------mobile responsive---------------------*/
 @media only screen and (max-width: 600px) {
@@ -519,6 +522,7 @@ width: 35%;
   }
   .update_info{
     display: block;
+    width: 93vw;
     height: 62vh !important;
     border: 2px solid white;
     border-radius: 20px;
