@@ -47,7 +47,7 @@ function getStateInfo(){
                   labels: ["Confirmed", "Recovered", "Dead"],
                   datasets: [{
                     label: "Population (millions)",
-                    backgroundColor: ["#ffb700", "lightblue","orange"],
+                    backgroundColor: ["darkgoldenrod", "lightblue","orange"],
                     data: [x.india_confirmed_cases,x.cured_cases,x.deaths_caused]
                   }]
                 },
