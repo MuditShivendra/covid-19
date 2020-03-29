@@ -51,7 +51,7 @@ function Sticky() {
 
 // ==============rightbox carousel======================
 var slideIndex = 1;
-console.log($(location).attr('href'));
+// console.log($(location).attr('href'));
 if($(location).attr('href')=='file:///home/mudit/projects/covid-19/index.html'){
 showSlides(slideIndex);
             }
@@ -72,6 +72,7 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
+
   }
   
   slides[slideIndex-1].style.display = "block";
@@ -98,7 +99,7 @@ function getStats(){
         success: function(data) {
             var obj = JSON.parse;
             var x = data;
-            console.log(x);
+            // console.log(x);
             
             var alpha = 0;
 
@@ -142,7 +143,7 @@ function getStats(){
               // $(".details").css("display","none");
               
             });
-            console.log($(window).width())
+            // console.log($(window).width())
             // ===============clicks
             if($(window).width() <= 600 ){
               // $(".svg").css("scale","0.5 0.6 !important")
