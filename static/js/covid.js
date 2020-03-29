@@ -72,10 +72,11 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-
+    console.log(slides[i].style.display)
   }
   
   slides[slideIndex-1].style.display = "block";
+  // console.log
 }
 // function state_update() {
 //   $( "#IN-MP" ).css({"fill": "red", "color": "white"});
