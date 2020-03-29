@@ -52,7 +52,7 @@ function Sticky() {
 // ==============rightbox carousel======================
 var slideIndex = 1;
 // console.log($(location).attr('href'));
-if($(location).attr('href')=='file:///home/mudit/projects/covid-19/index.html'){
+if($(location).attr('href')==('file:///home/mudit/projects/covid-19/index.html' || 'https://muditshivendra.github.io/covid-19/')){
 showSlides(slideIndex);
             }
 // state_update()
