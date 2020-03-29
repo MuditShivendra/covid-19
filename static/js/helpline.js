@@ -1,3 +1,8 @@
+if($(window).width() <= 600 ){
+    $(".leftdownbox").css("width","100vw")
+    $(".infobox").css("top","70vh")
+}
+
 // console.log("works");
 $("#map").find("path").hover(function(){
     var key = $(this).attr("id");

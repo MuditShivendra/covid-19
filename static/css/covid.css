@@ -492,6 +492,7 @@ width: 35%;
 
 /*----------------------mobile responsive---------------------*/
 @media only screen and (max-width: 600px) {
+   
   .main-container{
     margin-top: 75px;
   }
