@@ -77,13 +77,6 @@ display: none;
     margin-left: 10px;
 
 }
-@media screen and (max-height: 670px) {
-    .svg{
-        transform: scale(0.7) !important;
-        margin-top: -12vh;
-    }
-}
-
 /*----------------------mobile responsive---------------------*/
 @media screen and (max-width: 600px) {
 .main-container{
@@ -94,7 +87,7 @@ display: none;
     transform: scale(0.5 0.6) !important ;
     margin-top: -10vh;
     margin-left: -12vw; */
-}
+
 .leftdownbox{
     text-align: center !important;
     /* width: 100vw !important; */
@@ -117,6 +110,11 @@ display: none;
     right: 0 !important;
     z-index: 1;
 }
+}
 
-
+@media screen and (max-height: 670px) {
+    .svg{
+        transform: scale(0.5 0.6) !important;
+        margin-top: -12vh;
+    }
 }

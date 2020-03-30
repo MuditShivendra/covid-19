@@ -47,7 +47,7 @@ function getStateInfo(){
                   labels: ["Confirmed", "Recovered", "Dead"],
                   datasets: [{
                     label: "Population (millions)",
-                    backgroundColor: ["darkgoldenrod", "lightblue","orange"],
+                    backgroundColor: ["darkgoldenrod", "lightblue","red"],
                     data: [x.india_confirmed_cases,x.cured_cases,x.deaths_caused]
                   }]
                 },
@@ -80,15 +80,15 @@ function getNumberState(){
             var x = data;
             // console.log(x);
             var arr = ["",""];
-            for(var i = 0 ; i < x[0].length - 1; i++){
+            for(var i = 0 ; i < x[0].length - 2; i++){
                 arr[i] = x[0][i].state_name;
             }
             // console.log(arr);
             var brr = ["",""];
-            for(var i = 0 ; i < x[0].length - 1; i++){
+            for(var i = 0 ; i < x[0].length - 2; i++){
                 brr[i] = x[1][i].india_confirmed_cases;
             }
-            // console.log(brr);
+            console.log(brr);
          
             //=====================chat added here=======================
 
@@ -227,7 +227,7 @@ function getTimeData(){
                     },
                     {
                         label: 'Dead',
-                        backgroundColor: '#dc143c',
+                        backgroundColor: 'red',
                         hoverBackgroundColor: ' #db9999',
                         borderColor: 'white',
                         borderWidth: 1,
