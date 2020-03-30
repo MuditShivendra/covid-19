@@ -73,6 +73,12 @@ showSlides(slideIndex);
 if($(location).attr('href')== 'https://muditshivendra.github.io/covid-19/'){
 showSlides(slideIndex);
             }
+if($(location).attr('href')== 'http://locaid.in/'){
+showSlides(slideIndex);
+            }
+            if($(location).attr('href')== 'http://locaid.in/templates/news.html'){
+showSlides(slideIndex);
+            }
 // state_update()
 
 function plusSlides(n) {
