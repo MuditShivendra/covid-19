@@ -1,6 +1,6 @@
 Chart.defaults.global.defaultFontColor = 'white';
 // Chart.defaults.global.gridLines.Color = 'white';
-Chart.defaults.global.defaultFontSize =18;
+// Chart.defaults.global.defaultFontSize =18;
 // Chart.defaults.global.defaultFontFamily = "'Baloo Thambi 2', cursive;";
 Chart.defaults.global.animation.duration = 2000;
 
@@ -13,7 +13,7 @@ function getRefresh(){
         url: 'https://vp7.pythonanywhere.com/news-scrape',
         data: {},
         success: function(data) {
-            console.log("refreshed data")
+            // console.log("refreshed data")
         }
 
 
@@ -158,7 +158,7 @@ function getTimeData(){
         success: function(data) {
             var obj = JSON.parse;
             var x = data;
-            console.log(x);
+            // console.log(x);
 
             var arr = ["",""];
             for(var i = 0 ; i < x.length; i++){
@@ -174,7 +174,27 @@ function getTimeData(){
             for(var i = 1 ; i < x.length; i++){
                 crr[i] = brr[i]-brr[i-1];
             }
-            console.log(crr);
+            var drr = ["",""];
+            for(var i = 0 ; i < x.length; i++){
+                drr[i] = x[i].total_cured;
+            }
+
+            var err = ["",""];
+            for(var i = 1 ; i < x.length; i++){
+                err[i] = drr[i]-drr[i-1];
+            }
+            var frr = ["",""];
+            for(var i = 0 ; i < x.length; i++){
+                frr[i] = x[i].total_deaths;
+            }
+
+            var grr = ["",""];
+            for(var i = 1 ; i < x.length; i++){
+                grr[i] = frr[i]-frr[i-1];
+            }
+            // console.log(crr);
+            // console.log(err);
+            // console.log(grr);
             // ============bar graph comes here==================
 
             var ctx = document.getElementById('myChart').getContext('2d');
@@ -189,7 +209,7 @@ function getTimeData(){
                         label: 'New Cases',
                         backgroundColor: '#ffb700   ',
                         borderColor: 'white',
-                        hoverBackgroundColor: ' #9fe0ca',
+                        hoverBackgroundColor: ' #ff8400',
                         // hoverBorderWidth: 20,
                         // borderColor: 'white',
                         borderWidth: 1,
@@ -199,22 +219,29 @@ function getTimeData(){
                     {
                         label: 'Recovered',
                         backgroundColor: '#66cdaa   ',
+                        hoverBackgroundColor: ' #6689aa',
                         borderColor: 'white',
                         borderWidth: 1,
-                        data: [1, 1, 7, 1, 0, 1, 0]
+                        data: err
 
                     },
                     {
-                        label: 'Intensive Care',
+                        label: 'Dead',
                         backgroundColor: '#dc143c',
+                        hoverBackgroundColor: ' #db9999',
                         borderColor: 'white',
                         borderWidth: 1,
-                        data: [0, 0, 0, 0, 0, 0, 0]
+                        data: grr
                     }]
                 },
 
                 // Configuration options go here
                 options: {
+                    
+                    title: {
+                        display: true,
+                        text: 'Day Wise Update'
+                    },
                     responsive:true,
                     responsiveAnimationDuration: 2000,
                     maintainAspectRatio: false,
@@ -224,6 +251,7 @@ function getTimeData(){
                     // aspectRatio: 20,
 
                     scales: {
+                        
                         xAxes: [{
                             stacked: true,
                             gridLines: {

@@ -1,0 +1,64 @@
+.qabox{
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    color: white;
+    font-size: 20px;
+    padding: 0 200px;
+    font-family: 'Baloo Thambi 2', cursive;
+    line-height: 25px;
+
+}
+.qabox .ques{
+    font-size: 25px;
+    margin: 50px 0;
+    
+}
+.outbox{
+    margin-top: 10vh;
+    min-height: 88vh;    
+    color: white;
+    font-size: 20px;
+    padding: 10vh 10vw;
+    /* width: 100vw; */
+}
+.outbox h1{
+font-size: 30px;
+}
+.outbox h2{
+    font-size: 22px;
+    margin: 5vh 0 2vh 0 ;
+    }
+.inbox a{
+    /* margin-top: 3vh; */
+    margin-left: 3vw;
+    color: white;
+}
+.inbox{
+    margin: 5vh 0 0 5vw ;
+}
+.disclaimer{
+    margin-top: 50px;
+}
+.disclaimer p{
+    margin-top: 25px;
+    margin-left: 5vw;
+    font-style: italic;
+
+}
+@media only screen and (max-width: 600px) {
+    .outbox{
+        margin-top: 12vh !important;
+        padding: 0 !important;
+    }
+    .disclaimer p{
+        margin-bottom: 25px !important;
+        font-style: italic;
+    }
+    .qabox{
+        margin-top: 12vh !important;
+        padding: 5px !important;
+    }
+
+
+} 

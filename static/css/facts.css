@@ -152,7 +152,7 @@ body {
 }
 .mySlideshow img,.mySlideshow1 img,.mySlideshow2 img,.mySlideshow3 img,.mySlideshow4 img{
   width: 90% !important;
-  height: 40vh;
+  /* height: 40vh; */
   margin-left: 5% !important;
 }
 .contact_form{

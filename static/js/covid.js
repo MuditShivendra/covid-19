@@ -1,7 +1,16 @@
+//update views
+
+postCount();
+if($(window).width() <= 600){
+  $("#newsyo").css("display","inline-block")
+
+}
 // sticky header================================
 window.onscroll = function() {Sticky()};
 $(document).ready(function(){
   $(this).scrollTop(0);
+
+
 });
 
 var header = document.getElementById("myHeader");
@@ -51,7 +60,13 @@ function Sticky() {
 
 // ==============rightbox carousel======================
 var slideIndex = 1;
-console.log($(location).attr('href'));
+// console.log($(location).attr('href'));
+if($(location).attr('href')== 'file:///home/mudit/projects/covid-19/index.html'){
+showSlides(slideIndex);
+            }
+if($(location).attr('href')== 'file:///home/mudit/projects/covid-19/templates/news.html'){
+showSlides(slideIndex);
+            }
 if($(location).attr('href')== 'https://muditshivendra.github.io/covid-19/'){
 showSlides(slideIndex);
             }
@@ -72,7 +87,7 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-    console.log("wprks");
+    // console.log("wprks");
   }
   
   slides[slideIndex-1].style.display = "block";
@@ -195,4 +210,40 @@ function getStats(){
         } 
    });
     return data;
+}
+
+
+
+getViews();
+
+function getViews(){
+    var data = $.ajax( {
+        type: 'GET',     
+        url: 'https://vp7.pythonanywhere.com/hits',
+        data: {},
+        success: function(data) {
+          var obj = JSON.parse;
+            var x = data;
+            // console.log(x);
+            $("#viewcount").text(x[0].visits);
+            // console.log(x[0].visits);
+            
+        }
+
+
+    });
+    return data;
+}
+
+function postCount(){   
+  var data = $.ajax( {
+      type: 'GET',
+        url: 'https://vp7.pythonanywhere.com/hitcount/1',
+      data: {},
+      success: function(data) {
+        //  console.log("views updated bruh");                   
+      }
+      
+  });
+  return data;
 }
