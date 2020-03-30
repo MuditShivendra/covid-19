@@ -67,6 +67,9 @@ showSlides(slideIndex);
 if($(location).attr('href')== 'file:///home/mudit/projects/covid-19/templates/news.html'){
 showSlides(slideIndex);
             }
+if($(location).attr('href')== 'https://muditshivendra.github.io/covid-19/templates/news.html'){
+showSlides(slideIndex);
+            }
 if($(location).attr('href')== 'https://muditshivendra.github.io/covid-19/'){
 showSlides(slideIndex);
             }
