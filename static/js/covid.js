@@ -214,7 +214,7 @@ function getStats(){
 
               $("#"+key).css("fill","#0d130f");
               $(".details").css("display","none");
-              },1000);
+              },2000);
             });
           }
 

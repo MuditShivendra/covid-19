@@ -113,6 +113,7 @@ i{
   padding-top: 102px;
 }
 .loader-wrapper{
+  text-align: center;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -121,9 +122,7 @@ i{
   z-index: 10;
 }
 .loader-wrapper>img{
-  position: absolute;
-  top: 20vh;
-  left: 25vw;
+  margin-top: 40vh
 }
 .loader-wrapper>svg,
 .loader-wrapper>svg:focus {
@@ -513,8 +512,7 @@ width: 35%;
     font-size: 50px !important;
   }
   .loader-wrapper > img{
-    top: 10vh;
-    left: -53vw;
+    margin: 40vh auto;
   }
   .update_info .content_left{
     width: 93vw !important;
@@ -586,7 +584,8 @@ width: 35%;
   border: none !important;
 }
 .contact_form{
-  padding-right: 40px !important;
+  width: 280%;
+  /*padding-right: 40px !important;*/
   font-size: 12px !important;
 }
 .contact_form h1{
