@@ -116,7 +116,7 @@ display: none;
 
 @media screen and (max-height: 670px) {
     .svg{
-        transform: scale(0.5 0.6) !important;
+        transform: scale(0.5,0.6) ;
         margin-top: -12vh;
         opacity: 0.99;
     }

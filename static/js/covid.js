@@ -76,6 +76,9 @@ showSlides(slideIndex);
 if($(location).attr('href')== 'http://locaid.in/'){
 showSlides(slideIndex);
             }
+if($(location).attr('href')== 'http://locaid.in/index.html'){
+showSlides(slideIndex);
+            }
             if($(location).attr('href')== 'http://locaid.in/templates/news.html'){
 showSlides(slideIndex);
             }

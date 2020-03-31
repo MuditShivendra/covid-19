@@ -2,6 +2,10 @@ if($(window).width() <= 600 ){
     $(".leftdownbox").css("width","100vw")
     $(".infobox").css("top","70vh")
 }
+console.log($(window).height())
+if($(window).height() <= 670 ){
+    $(".svg").css("transform","scale(0.5,0.6) !important")
+}
 
 // console.log("works");
 $("#map").find("path").hover(function(){
