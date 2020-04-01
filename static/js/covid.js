@@ -46,7 +46,7 @@ function Sticky() {
               html.css('overflow', html.data('previous-overflow'));
               window.scrollTo(scrollPosition[0], scrollPosition[1])
               $("#myHeader").css("display","block");}
-                 , 4000);
+                 , 6000);
 
 
               });
