@@ -226,7 +226,7 @@ function getTimeData(){
 
                     },
                     {
-                        label: 'Dead',
+                        label: 'Deaths',
                         backgroundColor: 'red',
                         hoverBackgroundColor: ' #db9999',
                         borderColor: 'white',
