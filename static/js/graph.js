@@ -44,7 +44,7 @@ function getStateInfo(){
             new Chart(document.getElementById("pie-chart"), {
                 type: 'pie',
                 data: {
-                  labels: ["Confirmed", "Recovered", "Dead"],
+                  labels: ["Confirmed", "Recovered", "Deaths"],
                   datasets: [{
                     label: "Population (millions)",
                     backgroundColor: ["darkgoldenrod", "lightblue","red"],
