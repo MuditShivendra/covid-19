@@ -158,8 +158,9 @@ function getTimeData(){
         success: function(data) {
             var obj = JSON.parse;
             var x = data;
-            // console.log(x);
-
+             // console.log(x);
+             // console.log(x[x.length - 1].date)
+             $("#updatetime").text(x[x.length - 1].date)
             var arr = ["",""];
             for(var i = 0 ; i < x.length; i++){
                 arr[i] = x[i].date;

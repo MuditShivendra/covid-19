@@ -527,6 +527,7 @@ width: 35%;
     border: 2px solid white;
     border-radius: 20px;
     padding-right: 3vw;
+    padding-left: 0;
   }
 .content_up,.content_down{
     width: 100vw;
