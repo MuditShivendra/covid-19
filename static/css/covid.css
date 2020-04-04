@@ -533,10 +533,10 @@ width: 35%;
     width: 100vw;
 }
 .content_down{
-  margin-top: 2vh;
+  /*margin-top: 2vh;*/
 }
 .content_down h1{
-    font-size: 25px !important;
+    font-size: 1.3em !important;
 }
 .content_right{
   width: 93vw;
