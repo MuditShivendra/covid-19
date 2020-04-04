@@ -523,7 +523,7 @@ width: 35%;
   .update_info{
     display: block;
     width: 93vw;
-    height: 62vh !important;
+    height: 64vh !important;
     border: 2px solid white;
     border-radius: 20px;
     padding-right: 3vw;
@@ -540,6 +540,7 @@ width: 35%;
 }
 .content_right{
   width: 93vw;
+  margin-top: 2vh;
   height: 35vh;
 }
 .update_info .content_left{
