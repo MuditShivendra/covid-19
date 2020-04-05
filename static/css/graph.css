@@ -8,15 +8,17 @@
     flex-direction: column;
 }
 .bar_graph{
-    height: 63vh;
-    width: 67vw;
-    padding-left: 3vw;   
+    height: 57vh;
+    width: 60vw;
+    padding-left: 5vw;   
+    padding-right: 5vw;
     display: flex;
 }
 .line_graph{
     height: 500px;
-    width: 67vw;
-    padding-left: 3vw;   
+    width: 64vw;
+    padding-left: 3vw; 
+    padding-right: 3vw;  
     display: flex;
 }
 .chart_hori{

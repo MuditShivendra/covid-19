@@ -1,3 +1,17 @@
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -464,6 +478,13 @@ width: 35%;
     margin-left: 3px;
     transition:all .25s;
   }
+  .init{
+
+  color: white;
+  margin-top:2vh;
+  text-align: center;
+  font-size: 18px;
+  }
   
   .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
   
@@ -548,6 +569,9 @@ width: 35%;
 }
 .rightbox{
   display: none;
+}
+.init{
+  width: 100vw !important;
 }
 .bar_graph{
   width: 93vw !important;

@@ -78,17 +78,31 @@ function getNumberState(){
         success: function(data) {
             var obj = JSON.parse;
             var x = data;
-            // console.log(x);
+            console.log(x);
+            var skip = 0;
             var arr = ["",""];
-            for(var i = 0 ; i < x[0].length - 2; i++){
-                arr[i] = x[0][i].state_name;
+            for(var i = 0 ; i < x[0].length ; i++){
+                if(i==26){
+                    skip++;
+                }
+                else{
+                    // console.log(skip);
+                arr[skip] = x[0][skip].state_name;
+                    skip++;
+                }
             }
-            // console.log(arr);
+            skip = 0;
             var brr = ["",""];
-            for(var i = 0 ; i < x[0].length - 2; i++){
-                brr[i] = x[1][i].india_confirmed_cases;
+            for(var i = 0 ; i < x[0].length; i++){
+                if(i==26){
+                    skip++;
+                }
+                else{           
+                brr[skip] = x[1][skip].india_confirmed_cases;    
+                skip++; 
+                }
             }
-            console.log(brr);
+            // console.log(brr);
          
             //=====================chat added here=======================
 
@@ -314,6 +328,7 @@ var myLineChart = new Chart(ltx, {
                 }
             }],
             yAxes: [{
+                position: 'right',
                 gridLines: {
                   display: false,
                   lineWidth: 0.5,

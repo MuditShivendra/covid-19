@@ -143,7 +143,7 @@ function getStats(){
               var beta = 0;
             $("p#statename").text(data);
               var number = $("[key="+key+"]").text();
-              for(var i = 0; i < x.length - 1; i++){
+              for(var i = 0; i < x.length; i++){
                 
                 if(x[i].state_name == data){
                   alpha = i;
