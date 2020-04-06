@@ -5,21 +5,21 @@ Chart.defaults.global.defaultFontColor = 'white';
 Chart.defaults.global.animation.duration = 2000;
 
 
-getRefresh();
+// getRefresh();
 
-function getRefresh(){
-    var data = $.ajax( {
-        type: 'GET',     
-        url: 'https://vp7.pythonanywhere.com/news-scrape',
-        data: {},
-        success: function(data) {
-            // console.log("refreshed data")
-        }
+// function getRefresh(){
+//     var data = $.ajax( {
+//         type: 'GET',     
+//         url: 'https://vp7.pythonanywhere.com/news-scrape',
+//         data: {},
+//         success: function(data) {
+//             // console.log("refreshed data")
+//         }
 
 
-    });
-    return data;
-}
+//     });
+//     return data;
+// }
 
 
 
@@ -78,7 +78,7 @@ function getNumberState(){
         success: function(data) {
             var obj = JSON.parse;
             var x = data;
-            console.log(x);
+            // console.log(x);
             var arr = ["",""];
             for(var i = 0 ; i < x.length - 1; i++){
                 
