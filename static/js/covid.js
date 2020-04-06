@@ -122,21 +122,21 @@ function showSlides(n) {
 
 
 
-getStateRefresh();
+// getStateRefresh();
 
-function getStateRefresh(){
-    var data = $.ajax( {
-        type: 'GET',     
-        url: 'https://warm-cove-01684.herokuapp.com/state-scrape',
-        data: {},
-        success: function(data) {
-            // console.log("refreshed data")
-        }
+// function getStateRefresh(){
+//     var data = $.ajax( {
+//         type: 'GET',     
+//         url: 'https://warm-cove-01684.herokuapp.com/state-scrape',
+//         data: {},
+//         success: function(data) {
+//             // console.log("refreshed data")
+//         }
 
 
-    });
-    return data;
-}
+//     });
+//     return data;
+// }
 
 
 // ==========================
