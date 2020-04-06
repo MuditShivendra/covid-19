@@ -29,11 +29,11 @@ getStateInfo();
 function getStateInfo(){
     var data = $.ajax( {
         type: 'GET',     
-        url: 'https://vp7.pythonanywhere.com/state-scrape/state_result/?format=json',
+        url: 'https://warm-cove-01684.herokuapp.com/state-result/?format=json',
         data: {},
         success: function(data) {
             var obj = JSON.parse;
-            var x = data[26];
+            var x = data[data.length-1];
             // console.log(x);
             // ===================filling in the stats================================
             $("span#confirmed").text(x.india_confirmed_cases);
