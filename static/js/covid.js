@@ -1,5 +1,9 @@
 //update views
 
+
+
+
+
 postCount();
 if($(window).width() <= 600){
   $("#newsyo").css("display","inline-block")
@@ -117,12 +121,30 @@ function showSlides(n) {
 // $("span#viewcount").find("img").css("height","40px");
 
 
+
+getStateRefresh();
+
+function getStateRefresh(){
+    var data = $.ajax( {
+        type: 'GET',     
+        url: 'https://warm-cove-01684.herokuapp.com/state-scrape',
+        data: {},
+        success: function(data) {
+            // console.log("refreshed data")
+        }
+
+
+    });
+    return data;
+}
+
+
 // ==========================
 getStats();
 function getStats(){
     var data = $.ajax( {
         type: 'GET',     
-        url: 'https://vp7.pythonanywhere.com/state-scrape/state_result/?format=json',
+        url: 'https://warm-cove-01684.herokuapp.com/state-result/?format=json',
         data: {},
         success: function(data) {
             var obj = JSON.parse;
@@ -187,7 +209,7 @@ function getStats(){
               var beta = 0;
             $("p#statename").text(data);
               var number = $("[key="+key+"]").text();
-              for(var i = 0; i < x.length - 1; i++){
+              for(var i = 0; i < x.length; i++){
                 
                 if(x[i].state_name == data){
                   alpha = i;
@@ -259,3 +281,5 @@ function postCount(){
   });
   return data;
 }
+
+

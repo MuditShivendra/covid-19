@@ -73,34 +73,24 @@ getNumberState();
 function getNumberState(){
     var data = $.ajax( {
         type: 'GET',     
-        url: 'https://vp7.pythonanywhere.com/combo-mode/?format=json',
+        url: 'https://warm-cove-01684.herokuapp.com/state-result/?format=json',
         data: {},
         success: function(data) {
             var obj = JSON.parse;
             var x = data;
             console.log(x);
-            var skip = 0;
             var arr = ["",""];
-            for(var i = 0 ; i < x[0].length ; i++){
-                if(i==26){
-                    skip++;
-                }
-                else{
+            for(var i = 0 ; i < x.length - 1; i++){
+                
                     // console.log(skip);
-                arr[skip] = x[0][skip].state_name;
-                    skip++;
-                }
+                arr[i] = x[i].state_name;
+                
             }
-            skip = 0;
             var brr = ["",""];
-            for(var i = 0 ; i < x[0].length; i++){
-                if(i==26){
-                    skip++;
-                }
-                else{           
-                brr[skip] = x[1][skip].india_confirmed_cases;    
-                skip++; 
-                }
+            for(var i = 0 ; i < x.length - 1; i++){
+                       
+                brr[i] = x[i].india_confirmed_cases;    
+                
             }
             // console.log(brr);
          
