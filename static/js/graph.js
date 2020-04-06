@@ -289,7 +289,7 @@ var myLineChart = new Chart(ltx, {
             backgroundColor: 'rgba(255, 183, 0,0)   ',
             borderColor: 'white',
             borderWidth: 2,
-            pointRadius:7,
+            pointRadius:4,
             pointBackgroundColor:' #9fe0ca',
             pointHitRadius:40,
             // steppedLine:'middle',
