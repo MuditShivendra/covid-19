@@ -471,6 +471,87 @@ width: 35%;
   text-align: center;
   font-size: 18px;
   }
+  #resultstatename{
+    margin-top: 5vh;
+  }
+  .search_container{
+  font-family: 'Baloo Thambi 2', cursive;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .select_state,.select_district{
+    /*flex-grow: 1;*/
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid black;
+    /*height: 40vh;*/
+    width: 30%;
+  }
+  .searchResult{
+    display: none;
+    height: 30vh;
+    width: 30%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    /*flex-grow: 1;*/
+  }
+  .resultinfo{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 25px;
+  }
+  #resultname{
+    margin: 5vh 0;
+  }
+  .resultinfo h1{
+    margin-top: 3vh;
+    font-size: 25px
+  }
+  #myInput,#my2Input {
+  /*background-image: url('../media/searchicon.png');*/
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+#myUL,#my2UL {
+  height: 40vh;
+  overflow-y: scroll;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li ,#my2UL li  {
+  border-bottom: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  /*background-color: #f6f6f6;*/
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block
+}
+
+#myUL li:hover:not(.header),#my2UL li:hover:not(.header) {
+  background-color: #eee;
+  color: black;
+}
   
   .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
   
@@ -622,4 +703,28 @@ width: 35%;
 .footer-distributed{
   padding: 0 !important;
 }
+
+/*  search box implemented for mobile view*/
+.searchResult{
+  width: 100% !important;
+}
+.select_state, .select_district {
+    /* flex-grow: 1; */
+    /* height: 40vh; */
+    width: 98% !important;
+    margin: 2vh 1% !important;
+}
+.search_container{
+  flex-direction: column;
+}
+#myUL, #my2UL {
+  display: none;
+  z-index: 2;
+}
+
+
+
+
+
+
 }

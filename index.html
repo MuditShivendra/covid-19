@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="static/css/map.css">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">   
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -167,7 +167,7 @@
                             </div>
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_lights_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
@@ -179,7 +179,7 @@
     
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_5terre_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         </a>
                                 </div>
                                 <div class="newscontent">
@@ -193,7 +193,7 @@
                         <div class="group cont2">
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_woods_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
@@ -204,7 +204,7 @@
                             </div>
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_5terre_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
@@ -215,7 +215,7 @@
                             </div>
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_lights_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
@@ -226,7 +226,7 @@
                             </div>
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_lights_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
@@ -238,7 +238,7 @@
     
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_woods_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
@@ -249,23 +249,23 @@
                             </div>
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_lights_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         
                                     </a>
                                 </div>
                                 <div class="newscontent">
-                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                    
                                 </div>
                                 
                             </div>
     
                             <div class="mySlides">
                                 <div class="newspic">
-                                    <a class ="link" href="#"><img src="../static/media/img_5terre_wide.jpg" class="image" style="width:100%">
+                                    <a class ="link" href="#"><img src="" class="image" style="width:100%">
                                         </a>
                                 </div>
                                 <div class="newscontent">
-                                    the text comes here the text comes here the text comes here the text comes herethe text comes here the text comes here
+                                   
                                 </div>
                                 
                             </div>
@@ -494,6 +494,33 @@
                 </div>
             </div>
         </div>
+        <div class="search_container">
+            <div class="select_state">
+                <input type="text" id="myInput" onkeyup="findState()" placeholder="Search for State" title="Type in a name">
+
+                <ul id="myUL">
+                  
+                </ul>
+            </div>
+            <div class="select_district">
+                <input type="text" id="my2Input" onkeyup="findDistrict()" placeholder="Search for District" title="Type in a name">
+
+                <ul id="my2UL">
+                  
+                </ul>
+            </div>
+            <div class="searchResult">
+                <h1 id="resultstatename" style="font-size: 40px"></h1>
+                <h1 id="resultdistrictname" style="font-size: 30px"></h1>
+                <div class="resultinfo">
+                    <div class="resultTotal">
+                        <h1>Active Cases: <span id="totaltotal">0</span></h1>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
 
         
       
@@ -545,7 +572,9 @@
     </body>
 <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script> -->
+
     <script src="static/js/covid.js"></script>
+    <script src="static/js/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="static/js/graph.js"></script>
     <script src="static/js/news_data.js"></script>

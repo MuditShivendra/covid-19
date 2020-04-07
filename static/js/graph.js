@@ -34,8 +34,8 @@ function getStateInfo(){
         success: function(data) {
             var obj = JSON.parse;
             var x = data[data.length - 1];
-            console.log(data);
-            console.log(x);
+            // console.log(data);
+            // console.log(x);
             // ===================filling in the stats================================
             $("span#confirmed").text(x.india_confirmed_cases);
             $("span#recovered").text(x.cured_cases);

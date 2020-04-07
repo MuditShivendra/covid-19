@@ -68,6 +68,9 @@ var slideIndex = 1;
 if($(location).attr('href')== 'file:///home/mudit/projects/covid-19/index.html'){
 showSlides(slideIndex);
             }
+if($(location).attr('href')== 'file:///E:/coding/covid-19/index.html'){
+showSlides(slideIndex);
+            }
 if($(location).attr('href')== 'file:///home/mudit/projects/covid-19/templates/news.html'){
 showSlides(slideIndex);
             }
